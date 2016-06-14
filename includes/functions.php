@@ -18,9 +18,8 @@ function UpdateContact($post){
 
     $conn = GetConnection();
 
-    $query = "update contacts set fname = '" .$post["fname"]."',lname='".$post['lname'].
-        ", email = '".$post['email']."',phone = '".$post['phone'].
-        "', catId = '".$post["catid"]."' where id = '".$post['id']."''";
+    $query = "update contacts set fname = '" .$post["fname"]."',lname='".$post['lname']."', email = '".$post['email']."',phone = '".$post['phone'].
+        "', catid = '".$post["catid"]."' where id = '".$post["id"]."'";
     $results = mysqli_query($conn, $query);
 
     if(mysqli_affected_rows($conn)>0)

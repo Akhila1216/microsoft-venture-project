@@ -51,7 +51,7 @@ function DisplayContactForm($record){
             <input type="submit" name="submitted" value="Save" />
 
             <div class="clr"></div>
-            <input type="hidden" value="<?php echo ($record["id"])? $record['id']:"0";?>" name = "id" />
+            <input type="hidden" name = "id" value="<?php echo ($record["id"])? $record['id']:"0";?>"  />
     </form>
     <?php
 
